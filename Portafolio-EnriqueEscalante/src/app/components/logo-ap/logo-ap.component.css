@@ -1,3 +1,34 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #logoArgentinaPrograma{
   width: 150px;
 }
+img{
+  width:40px;
+}
+
+.redes{
+  margin-right: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ---Mobile Devices --- */
+@media(max-width:575px){
+  .container{
+  flex-direction: colum;
+}
+.redes{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+  .redes img{
+    margin: 0.2em;
+  }
+}
+
